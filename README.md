@@ -26,8 +26,12 @@ Compress(app)
 Within the Sanic application config you can provide the following settings to control the behavior of sanic_compress. None of the settings are required.
 
 
-`COMPRESS_MIMETYPES`: Set the list of mimetypes to compress here.
-- Default: `{'text/html','text/css','text/xml','application/json','application/javascript'}`
+`COMPRESS_MIMETYPES`: Set the list of mimetypes and support encodings to compress here.
+- Default: `{
+    "text/csv": ["br", "gzip"],
+    "text/html": ["br", "gzip"],
+    "application/json": ["br", "gzip"],
+}`
 
 `COMPRESS_LEVEL`: Specifies the gzip compression level (1-9).
 - Default: `6`
