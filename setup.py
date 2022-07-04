@@ -8,17 +8,17 @@ except:
     long_description = ''
 
 setup(
-    name='sanic_compress',
+    name='sanic_compress_plus',
     version='0.1.1',
-    description='An extension which allows you to easily gzip your Sanic responses.',
+    description='An extension which allows you to easily gzip and brotliyour Sanic responses.',
     long_description=long_description,
     url='http://github.com/subyraman/sanic_session',
-    author='Suby Raman',
+    author='Hanson Kim',
     license='MIT',
-    packages=['sanic_compress'],
-    install_requires=('sanic'),
+    packages=['sanic_compress_plus'],
+    install_requires=('sanic', 'brotli'),
     zip_safe=False,
-    keywords=['sanic', 'gzip'],
+    keywords=['sanic', 'gzip', 'brotli'],
     classifiers=[
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
