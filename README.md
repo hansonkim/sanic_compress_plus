@@ -1,6 +1,6 @@
-# sanic_compress
+# sanic_compress_plus
 
-sanic_compress is an extension which allows you to easily gzip your Sanic responses. It is a port of the [Flask-Compress](https://github.com/libwilliam/flask-compress) extension.
+sanic_compress_plus is an extension which allows you to easily gzip and brotli your Sanic responses. It is a fork of the sanic_compress package which is a port of the [Flask-Compress](https://github.com/libwilliam/flask-compress) extension.
 
 
 ## Installation

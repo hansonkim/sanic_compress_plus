@@ -1,2 +1,4 @@
 aiohttp
 pytest
+pytest-sanic
+sanic-testing
