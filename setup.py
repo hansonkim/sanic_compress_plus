@@ -10,9 +10,9 @@ except:
 setup(
     name='sanic_compress_plus',
     version='0.1.1',
-    description='An extension which allows you to easily gzip and brotliyour Sanic responses.',
+    description='An extension which allows you to easily gzip and brotli your Sanic responses.',
     long_description=long_description,
-    url='http://github.com/subyraman/sanic_session',
+    url='https://github.com/hansonkim/sanic_compress_plus',
     author='Hanson Kim',
     license='MIT',
     packages=['sanic_compress_plus'],
