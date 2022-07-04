@@ -7,7 +7,7 @@ sanic_compress_plus is an extension which allows you to easily gzip and brotli y
 
 Install with `pip`:
 
-`pip install sanic_compress`
+`pip install sanic_compress_plus`
 
 ## Usage
 
@@ -15,7 +15,7 @@ Usage is simple. Simply pass in the Sanic app object to the `Compress` class, an
 
 ```python
 from sanic import Sanic
-from sanic_compress import Compress
+from sanic_compress_plus import Compress
 
 app = Sanic(__name__)
 Compress(app)
@@ -41,7 +41,7 @@ Example of using custom configuration:
 
 ```python
 from sanic import Sanic
-from sanic_compress import Compress
+from sanic_compress_plus import Compress
 
 app = Sanic(__name__)
 app.config['COMPRESS_MIMETYPES'] = {'text/html', 'application/json'}

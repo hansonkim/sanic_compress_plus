@@ -3,7 +3,7 @@ import uuid
 import pytest
 from sanic import Sanic
 from sanic.response import html, json, HTTPResponse
-from sanic_compress import Compress
+from sanic_compress_plus import Compress
 
 OTHER_COMPRESSIBLE_TYPES = set(["text/csv", "application/json"])
 
