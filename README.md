@@ -1,7 +1,8 @@
 # sanic_compress_plus
 
-sanic_compress_plus is an extension which allows you to easily gzip and brotli your Sanic responses. It is a fork of the sanic_compress package which is a port of the [Flask-Compress](https://github.com/libwilliam/flask-compress) extension.
+sanic_compress_plus is an extension which allows you to easily gzip and brotli your Sanic responses. It is a fork of the [sanic_compress](https://github.com/subyraman/sanic_compress) package which is a port of the [Flask-Compress](https://github.com/libwilliam/flask-compress) extension.
 
+Read this in other languages: [English](README.md), [한국어](README.ko.md)
 
 ## Installation
 
@@ -48,7 +49,7 @@ from sanic import Sanic
 from sanic_compress_plus import Compress
 
 app = Sanic(__name__)
-app.config['COMPRESS_MIMETYPES'] = {'text/html', 'application/json'}
+app.config['COMPRESS_MIMETYPES'] = {'text/html': ["gzip", "br"], 'application/json': ["br", "gzip"]}
 app.config['COMPRESS_LEVEL'] = 4
 app.config['COMPRESS_MIN_SIZE'] = 300
 Compress(app)
